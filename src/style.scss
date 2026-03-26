@@ -1,10 +1,26 @@
 // Configuration
 @import "bootstrap/scss/functions";
+
+$text: rgb(9, 24, 26);
+$background: rgb(241, 249, 250);
+$primary: rgb(80, 181, 194);
+$secondary: rgb(155, 171, 220);
+$accent: rgb(119, 117, 207);
+
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $accent,
+  "pluto": $indigo-600,
+);
 @import "bootstrap/scss/utilities";
+
+$utilities: map-remove($utilities, "float", "opacity", "overflow", "shadow", "position");
 
 // Layout & components
 @import "bootstrap/scss/root";
@@ -13,8 +29,8 @@
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-@import "bootstrap/scss/tables";
-@import "bootstrap/scss/forms";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
@@ -22,16 +38,16 @@
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
 @import "bootstrap/scss/card";
-@import "bootstrap/scss/accordion";
-@import "bootstrap/scss/breadcrumb";
-@import "bootstrap/scss/pagination";
-@import "bootstrap/scss/badge";
-@import "bootstrap/scss/alert";
-@import "bootstrap/scss/progress";
-@import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/accordion";
+ // @import "bootstrap/scss/breadcrumb";
+ // @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+ // @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
-@import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal";
+// @import "bootstrap/scss/toasts";
+ // @import "bootstrap/scss/modal";
 @import "bootstrap/scss/tooltip";
 @import "bootstrap/scss/popover";
 @import "bootstrap/scss/carousel";
